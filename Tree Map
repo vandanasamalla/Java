@@ -1,0 +1,53 @@
+package com.collection;
+
+import java.util.TreeMap;
+public class Demo_Tree_Map {
+     public static void main(String args[]){
+    	 
+    	 //Creating tree map with integer and string values
+           TreeMap<Integer,String> tmap=new TreeMap<Integer,String>();
+            
+           //adding elements to the tree map
+               tmap.put(11,"Developer");	
+               tmap.put(23,"Tester");	
+               tmap.put(39,"Tech Support");	
+               tmap.put(40,"Data analyst");	
+               tmap.put(53,"Data base administrator");	
+               tmap.put(62,"System Analyst");	
+               tmap.put(57,"System architect");
+
+               tmap.put(0, null);
+      		   tmap.put(-5,"null");
+      		   tmap.put(-5,"HR");
+          //printing elements of a tree map
+               System.out.println(tmap);
+               
+           //This method print the boolean values
+               System.out.println(tmap.containsKey(40));
+               System.out.println(tmap.containsValue("software architect"));
+           
+            //remove the key,values from the map tree
+               System.out.println(tmap.remove(62));
+               System.out.println(tmap);
+             // print the size of the tree map
+               System.out.println(tmap.size());
+             //printing the first key of the tree map
+               System.out.println(tmap.firstKey());
+           //this methods printing the last entry
+               System.out.println(tmap.lastEntry());
+               System.out.println(tmap.pollLastEntry());
+               System.out.println(tmap.lastKey());
+
+         
+           //Creating Tree map with Double and Integer          
+             TreeMap<Double,Integer> tmap1=new TreeMap<Double,Integer>();
+                       tmap1.put(30.15,64);
+                       tmap1.put(43.09,54);
+                      System.out.println(tmap1);
+              // printing the nearest element which is lower than given value from the tree map list       
+                     System.out.println(tmap1.floorKey(30.70));
+              // printing the nearest element which is greater than given value from the tree map list
+                     System.out.println(tmap1.ceilingKey(40.54));
+     }
+     
+      }
