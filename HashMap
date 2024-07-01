@@ -1,0 +1,25 @@
+package com.collection;
+import java.util.HashMap;
+public class Demo_HashMap {
+        public static void main(String args[]) {
+        	HashMap<Integer,String> cities=new HashMap<Integer,String>();
+     cities.put(1,"Indore");
+     cities.put(7,"Kerala");
+     cities.put(2,"Surat");  
+     cities.put(3,"Mumbai");  
+     cities.put(4,"Bhopal");  
+     cities.put(5,"Vishakapatnam");  
+
+     System.out.println(cities);
+     
+     cities.put(6,"Vijayavada");    
+       System.out.println(cities);
+       
+ System.out.println(cities.containsKey(7));
+ System.out.println(cities.containsValue("Bhopal"));
+ System.out.println(cities.size());
+ System.out.println(cities.remove(5));
+ System.out.println(cities);
+
+        }
+}
